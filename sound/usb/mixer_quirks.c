@@ -2919,6 +2919,9 @@ int snd_usb_mixer_apply_create_quirk(struct usb_mixer_interface *mixer)
 	case USB_ID(0x2b73, 0x0017): /* Pioneer DJ DJM-250MK2 */
 		err = snd_pioneer_djm_controls_create(mixer);
 		break;
+	case USB_ID(0x2b73, 0x0013): /* Pioneer DJ DJM-450 */
+		err = snd_pioneer_djm_controls_create(mixer);
+		break;
 	}
 
 	return err;
